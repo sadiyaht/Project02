@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f3f3f3;
+}
+
+h1, h2 {
+    font-family: Georgia;
+}
+
+header {
+    background-color: #b03030;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+/* image layout */
+.pics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+button {
+    background-color: #b03030;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+/* hover effect */
+button:hover {
+    background-color: #802020;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* responsive */
+@media (min-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pics {
+        grid-template-columns: 1fr 1fr;
+    }
+}
